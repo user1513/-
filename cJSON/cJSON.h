@@ -24,14 +24,14 @@ extern "C"
 {
 #endif
 
-/* cJSON Types: */
-#define cJSON_False 0
-#define cJSON_True 1
-#define cJSON_NULL 2
-#define cJSON_Number 3
-#define cJSON_String 4
-#define cJSON_Array 5
-#define cJSON_Object 6
+/* cJSON Types: */                //cJSON定义的类型
+#define cJSON_False 0             //bool
+#define cJSON_True 1              //bool
+#define cJSON_NULL 2              //NULL空
+#define cJSON_Number 3            //数值型
+#define cJSON_String 4            //字符串类型
+#define cJSON_Array 5             //数组
+#define cJSON_Object 6            //对象
 	
 #define cJSON_IsReference 256
 #define cJSON_StringIsConst 512
@@ -104,7 +104,7 @@ extern void	cJSON_AddItemToObjectCS(cJSON *object,const char *string,cJSON *item
 extern void cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item);
 extern void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item);
 
-/* Remove/Detatch items from Arrays/Objects. */
+/* Remove/Detach items from Arrays/Objects. */
 extern cJSON *cJSON_DetachItemFromArray(cJSON *array,int which);
 extern void   cJSON_DeleteItemFromArray(cJSON *array,int which);
 extern cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string);

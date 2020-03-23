@@ -35,7 +35,16 @@
 static const char *ep;
 
 const char *cJSON_GetErrorPtr(void) { return ep; }
-
+/*
+cJSON_strcasecmp 字符串比较compare
+返回值 0:
+情况1:形参s1和s2均为空
+情况2:形参s1不为空,遍历比较时,tolower(s1)和tolower(s2)完全相等
+返回值 1:形参s2为空
+返回值: = tolower(*(const unsigned char *)s1) - tolower(*(const unsigned char *)s2);
+情况1: > 0 
+情况2: < 0
+*/
 static int cJSON_strcasecmp(const char *s1, const char *s2)
 {
 	if (!s1)
@@ -48,7 +57,9 @@ static int cJSON_strcasecmp(const char *s1, const char *s2)
 	return tolower(*(const unsigned char *)s1) - tolower(*(const unsigned char *)s2);
 }
 
+/*定义函数型指针cJSON_malloc,指向系统函数malloc*/
 static void *(*cJSON_malloc)(size_t sz) = malloc;
+/*定义函数型指针cJSON_free,指向系统函数free*/
 static void (*cJSON_free)(void *ptr) = free;
 
 static char *cJSON_strdup(const char *str)
