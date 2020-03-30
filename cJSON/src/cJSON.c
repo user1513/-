@@ -62,11 +62,21 @@ static void *(*cJSON_malloc)(size_t sz) = malloc;
 /*定义函数型指针cJSON_free,指向系统函数free*/
 static void (*cJSON_free)(void *ptr) = free;
 
+/*
+cJSON_strdup 字符串拷贝函数
+返回值=NULL:代表malloc失败
+返回值非NULL:代表分配成功 
+
+strdup()在内部调用了malloc()为变量分配内存，
+不需要使用返回的字符串时，
+需要用free()释放相应的内存空间，
+否则会造成内存泄漏。
+*/
 static char *cJSON_strdup(const char *str)
 {
 	size_t len;
 	char *copy;
-
+	//strlen(char *)碰到'\0'就返回'\0'以前的字符数。
 	len = strlen(str) + 1;
 	if (!(copy = (char *)cJSON_malloc(len)))
 		return 0;
@@ -74,8 +84,15 @@ static char *cJSON_strdup(const char *str)
 	return copy;
 }
 
+/*
+cJSON_InitHooks 初始化钩子函数
+作用:
+给cJSON_malloc函数指针重新赋值
+给cJSON_free函数指针重新赋值
+*/
 void cJSON_InitHooks(cJSON_Hooks *hooks)
 {
+
 	if (!hooks)
 	{ /* Reset hooks */
 		cJSON_malloc = malloc;
@@ -91,11 +108,14 @@ void cJSON_InitHooks(cJSON_Hooks *hooks)
 static cJSON *cJSON_New_Item(void)
 {
 	cJSON *node = (cJSON *)cJSON_malloc(sizeof(cJSON));
-	if (node)
+	if (node)//给结构体整体赋为0
 		memset(node, 0, sizeof(cJSON));
 	return node;
 }
-
+//存在疑问,type的第九位和第八位有什么用处
+//01000000000
+//1<<9 1<<8 1<<7 1<<6 1<<5 1<<4 1<<3 1<<2 1<<1 1<<0
+//512  256  128  64   32   16   8    4    2    1
 /* Delete a cJSON structure. */
 void cJSON_Delete(cJSON *c)
 {
@@ -103,6 +123,7 @@ void cJSON_Delete(cJSON *c)
 	while (c)
 	{
 		next = c->next;
+		//代表c->type不存在上述结构
 		if (!(c->type & cJSON_IsReference) && c->child)
 			cJSON_Delete(c->child);
 		if (!(c->type & cJSON_IsReference) && c->valuestring)
@@ -118,6 +139,7 @@ void cJSON_Delete(cJSON *c)
 static const char *parse_number(cJSON *item, const char *num)
 {
 	double n = 0, sign = 1, scale = 0;
+	//分量表			//符号量表
 	int subscale = 0, signsubscale = 1;
 
 	if (*num == '-')
@@ -128,11 +150,13 @@ static const char *parse_number(cJSON *item, const char *num)
 		do
 			n = (n * 10.0) + (*num++ - '0');
 		while (*num >= '0' && *num <= '9'); /* Number? */
+	
+	//经过上面这步,可以将整数部分全部获取
 	if (*num == '.' && num[1] >= '0' && num[1] <= '9')
 	{
 		num++;
 		do
-			n = (n * 10.0) + (*num++ - '0'), scale--;
+			n = (n * 10.0) + (*num++ - '0'), scale--;//scale记录小数的位数
 		while (*num >= '0' && *num <= '9');
 	}								/* Fractional part? */
 	if (*num == 'e' || *num == 'E') /* Exponent? */
@@ -154,10 +178,12 @@ static const char *parse_number(cJSON *item, const char *num)
 	return num;
 }
 
+
+//该函数的作用是返回>=x的最小的2的N次方数。
 static int pow2gt(int x)
-{
-	--x;
-	x |= x >> 1;
+{					
+	--x;			
+	x |= x >> 1;	
 	x |= x >> 2;
 	x |= x >> 4;
 	x |= x >> 8;
@@ -169,18 +195,20 @@ typedef struct
 {
 	char *buffer;
 	int length;
-	int offset;
+	int offset;			//偏移量
 } printbuffer;
 
+//使用buffer时当offset+needed值大于length时存在数组越界
+//当出现越界会重新分配一个pow2gt()大的buffer存放数据
 static char *ensure(printbuffer *p, int needed)
 {
 	char *newbuffer;
 	int newsize;
 	if (!p || !p->buffer)
 		return 0;
-	needed += p->offset;
-	if (needed <= p->length)
-		return p->buffer + p->offset;
+	needed += p->offset;		//needed加上原有偏移量
+	if (needed <= p->length)	//原有偏移量加上输入的needed的小于数组总长度
+		return p->buffer + p->offset;//代表数组没有越界
 
 	newsize = pow2gt(needed);
 	newbuffer = (char *)cJSON_malloc(newsize);
@@ -198,6 +226,7 @@ static char *ensure(printbuffer *p, int needed)
 	return newbuffer + p->offset;
 }
 
+//更新(偏移量+偏移量位置到\0的长度)
 static int update(printbuffer *p)
 {
 	char *str;
@@ -206,7 +235,8 @@ static int update(printbuffer *p)
 	str = p->buffer + p->offset;
 	return p->offset + strlen(str);
 }
-
+//疑问 1.为什么要给int分配21个字节
+//疑问 2.为什么要给double分配64个字节
 /* Render the number nicely from the given item into a string. */
 static char *print_number(cJSON *item, printbuffer *p)
 {
@@ -221,6 +251,7 @@ static char *print_number(cJSON *item, printbuffer *p)
 		if (str)
 			strcpy(str, "0");
 	}
+	//判断valuedouble是不是一个整数
 	else if (fabs(((double)item->valueint) - d) <= DBL_EPSILON && d <= INT_MAX && d >= INT_MIN)
 	{
 		if (p)
@@ -238,6 +269,7 @@ static char *print_number(cJSON *item, printbuffer *p)
 			str = (char *)cJSON_malloc(64); /* This is a nice tradeoff. */
 		if (str)
 		{
+			//判断valuedouble的值是否存在小数,在上面判断整数的if语句中限制了valuedouble的大小,使得大于int的数值不会进入到整数中
 			if (fabs(floor(d) - d) <= DBL_EPSILON && fabs(d) < 1.0e60)
 				sprintf(str, "%.0f", d);
 			else if (fabs(d) < 1.0e-6 || fabs(d) > 1.0e9)
@@ -249,6 +281,7 @@ static char *print_number(cJSON *item, printbuffer *p)
 	return str;
 }
 
+//解析2个字节的内容(16进制转换成10进制)
 static unsigned parse_hex4(const char *str)
 {
 	unsigned h = 0;
@@ -309,8 +342,8 @@ static const char *parse_string(cJSON *item, const char *str)
 	} /* not a string! */
 
 	while (*ptr != '\"' && *ptr && ++len)
-		if (*ptr++ == '\\')
-			ptr++; /* Skip escaped quotes. */
+		if (*ptr++ == '\\')//
+			ptr++; /* Skip escaped quotes. 跳过转义的引号*/
 
 	out = (char *)cJSON_malloc(len + 1); /* This is how long we need for the string, roughly. */
 	if (!out)
@@ -328,35 +361,39 @@ static const char *parse_string(cJSON *item, const char *str)
 			switch (*ptr)
 			{
 			case 'b':
-				*ptr2++ = '\b';
+				*ptr2++ = '\b';//--->/b:回退：向后退一格
 				break;
 			case 'f':
-				*ptr2++ = '\f';
+				*ptr2++ = '\f';//--->/f:换页
 				break;
 			case 'n':
-				*ptr2++ = '\n';
+				*ptr2++ = '\n';//--->/n:换行，光标到下行行首
 				break;
 			case 'r':
-				*ptr2++ = '\r';
+				*ptr2++ = '\r';//--->/r:回车，光标到本行行首
 				break;
 			case 't':
-				*ptr2++ = '\t';
+				*ptr2++ = '\t';//--->/t:水平制表
 				break;
 			case 'u': /* transcode utf16 to utf8. */
 				uc = parse_hex4(ptr + 1);
 				ptr += 4; /* get the unicode char. */
-
+				//低位的数据先读出,可能是一个无效的数据
 				if ((uc >= 0xDC00 && uc <= 0xDFFF) || uc == 0)
 					break; /* check for invalid.	*/
-
+				//utf-16高字节代码对
 				if (uc >= 0xD800 && uc <= 0xDBFF) /* UTF16 surrogate pairs.	*/
 				{
+					//判断是否缺少低字节
 					if (ptr[1] != '\\' || ptr[2] != 'u')
 						break; /* missing second-half of surrogate.	*/
 					uc2 = parse_hex4(ptr + 3);
 					ptr += 6;
+					//判断新得到的两个字节是否处于低字节代码对
 					if (uc2 < 0xDC00 || uc2 > 0xDFFF)
 						break; /* invalid second-half of surrogate.	*/
+
+					//utf-16 --->>>  unicode
 					uc = 0x10000 + (((uc & 0x3FF) << 10) | (uc2 & 0x3FF));
 				}
 
@@ -401,6 +438,7 @@ static const char *parse_string(cJSON *item, const char *str)
 }
 
 /* Render the cstring provided to an escaped version that can be printed. */
+//个人理解:print_string_ptr渲染是一些我们不是很敏感的的字符转义成实实在在的文字
 static char *print_string_ptr(const char *str, printbuffer *p)
 {
 	const char *ptr;
@@ -408,13 +446,13 @@ static char *print_string_ptr(const char *str, printbuffer *p)
 	int len = 0, flag = 0;
 	unsigned char token;
 
-	for (ptr = str; *ptr; ptr++)
+	for (ptr = str; *ptr; ptr++)//判断字符串内部有没有控制字符,'\"'和'\\'
 		flag |= ((*ptr > 0 && *ptr < 32) || (*ptr == '\"') || (*ptr == '\\')) ? 1 : 0;
-	if (!flag)
+	if (!flag)//字符串内部不存在控制字符,'\"'和'\\'则进入if
 	{
 		len = ptr - str;
 		if (p)
-			out = ensure(p, len + 3);
+			out = ensure(p, len + 3);//+3是为了开头增加'\"'结尾增加'\"'和'\0'
 		else
 			out = (char *)cJSON_malloc(len + 3);
 		if (!out)
@@ -424,21 +462,22 @@ static char *print_string_ptr(const char *str, printbuffer *p)
 		strcpy(ptr2, str);
 		ptr2[len] = '\"';
 		ptr2[len + 1] = 0;
-		return out;
+		return out;//输出字符串
 	}
 
-	if (!str)
+	if (!str)//代表输入str为NULL
 	{
 		if (p)
 			out = ensure(p, 3);
 		else
 			out = (char *)cJSON_malloc(3);
-		if (!out)
+		if (!out)//分配空间识别
 			return 0;
 		strcpy(out, "\"\"");
 		return out;
 	}
 	ptr = str;
+	//这里计算加2('\\'+字符)和加6('\\' + uxxxx)是按照下面格式分配的
 	while ((token = *ptr) && ++len)
 	{
 		if (strchr("\"\\\b\f\n\r\t", token))
@@ -499,7 +538,7 @@ static char *print_string_ptr(const char *str, printbuffer *p)
 	*ptr2++ = 0;
 	return out;
 }
-/* Invote print_string_ptr (which is useful) on an item. */
+/* Invoke print_string_ptr (which is useful) on an item. */
 static char *print_string(cJSON *item, printbuffer *p) { return print_string_ptr(item->valuestring, p); }
 
 /* Predeclare these prototypes. */

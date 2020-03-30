@@ -11,7 +11,8 @@
                 "F:/MinGW-w64/mingw64/x86_64-w64-mingw32/include",
                 "F:/MinGW-w64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
                 "F:/MinGW-w64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/tr1",
-                "F:/MinGW-w64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"
+                "F:/MinGW-w64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+                "${workspaceFolder}/inc"
             ],
             "defines": [
                 "_DEBUG",
