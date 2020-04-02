@@ -200,6 +200,7 @@ typedef struct
 
 //使用buffer时当offset+needed值大于length时存在数组越界
 //当出现越界会重新分配一个pow2gt()大的buffer存放数据
+//ensure只负责数组是否安全不负责offset的增加,增加由update函数辅助
 static char *ensure(printbuffer *p, int needed)
 {
 	char *newbuffer;
@@ -549,9 +550,14 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p);
 static const char *parse_object(cJSON *item, const char *value);
 static char *print_object(cJSON *item, int depth, int fmt, printbuffer *p);
 
+// CR：Carriage Return，对应ASCII中转义字符\r，表示回车
+// LF：Linefeed，对应ASCII中转义字符\n，表示换行
+// CRLF：Carriage Return & Linefeed，\r\n，表示回车并换行
+
 /* Utility to jump whitespace and cr/lf */
 static const char *skip(const char *in)
 {
+	/**/
 	while (in && *in && (unsigned char)*in <= 32)
 		in++;
 	return in;
@@ -565,7 +571,7 @@ cJSON *cJSON_ParseWithOpts(const char *value, const char **return_parse_end, int
 	ep = 0;
 	if (!c)
 		return 0; /* memory fail */
-
+	//通过skip(value)后的value为空
 	end = parse_value(c, skip(value));
 	if (!end)
 	{
@@ -594,7 +600,7 @@ cJSON *cJSON_Parse(const char *value) { return cJSON_ParseWithOpts(value, 0, 0);
 /* Render a cJSON item/entity/structure to text. */
 char *cJSON_Print(cJSON *item) { return print_value(item, 0, 1, 0); }
 char *cJSON_PrintUnformatted(cJSON *item) { return print_value(item, 0, 0, 0); }
-
+//先创建一个新的buffer返回buffer
 char *cJSON_PrintBuffered(cJSON *item, int prebuffer, int fmt)
 {
 	printbuffer p;
@@ -772,7 +778,7 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 	cJSON *child = item->child;
 	int numentries = 0, i = 0, fail = 0;
 	size_t tmplen = 0;
-
+	//numentries计算同一层内有多少个条数据
 	/* How many entries in the array? */
 	while (child)
 		numentries++, child = child->next;
@@ -792,6 +798,7 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 	{
 		/* Compose the output array. */
 		i = p->offset;
+		//ensure只负责数组是否安全不负责offset的增加,增加由update函数辅助
 		ptr = ensure(p, 1);
 		if (!ptr)
 			return 0;
@@ -826,6 +833,8 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 	else
 	{
 		/* Allocate an array to hold the values for each */
+
+		//创建指针型数组,数组中每一个变量都是指针
 		entries = (char **)cJSON_malloc(numentries * sizeof(char *));
 		if (!entries)
 			return 0;
