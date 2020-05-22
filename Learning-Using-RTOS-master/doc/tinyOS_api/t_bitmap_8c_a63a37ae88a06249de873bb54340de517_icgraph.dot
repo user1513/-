@@ -1,0 +1,21 @@
+digraph "tBitmapClear"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tBitmapClear",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tTaskSchedUnRdy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a6f3aa47609478099b79d1520a9baf9b3",tooltip="将任务从就绪列表中移除 "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tEventWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a0bbda829b0d83072138caad66f98899a"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="tTaskSchedRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#ae85f17694aea45697d37b787702822ad",tooltip="将任务从就绪列表中移除 "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="tTaskForceDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ad4f55f0276a954401641c0972f0020e3"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="tTaskDeleteSelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a7e75a9fc2e7d9ca0bf62d519db50de00"];
+}

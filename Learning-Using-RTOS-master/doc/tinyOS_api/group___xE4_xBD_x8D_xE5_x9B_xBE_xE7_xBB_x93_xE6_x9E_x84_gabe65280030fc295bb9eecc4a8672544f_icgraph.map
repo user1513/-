@@ -1,0 +1,4 @@
+<map id="tBitmapInit" name="tBitmapInit">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga9be6ec7675bc849423bb28132c6f3474" title="初始化调度器 " alt="" coords="138,5,246,31"/>
+<area shape="rect" id="node3" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="系统入口，完成所有功能的创建，空闲任务的创建等功能 " alt="" coords="294,5,344,31"/>
+</map>

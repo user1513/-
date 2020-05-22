@@ -1,0 +1,21 @@
+digraph "tTaskSchedRdy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node112 [label="tTaskSchedRdy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node112 -> Node113 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node113 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node112 -> Node114 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node114 [label="tEventWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a01397d82a226289ad6fad1602cb705c8"];
+  Node112 -> Node115 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node115 [label="tEventWakeUpTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#af035c08c00e607bf3019020ee09bf3c8"];
+  Node112 -> Node116 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 [label="tEventRemoveAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#ace850c06cc2fc2f07296e1eb4552030a"];
+  Node112 -> Node117 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="tTaskInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a639ee038febea3c977d37585fcc8a573",tooltip="tinyOS的任务管理 "];
+  Node117 -> Node118 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="系统入口，完成所有功能的创建，空闲任务的创建等功能 "];
+  Node112 -> Node119 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node119 [label="tTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ac08bc12c30a810c1ec5c48f330fd509a"];
+}

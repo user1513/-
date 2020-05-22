@@ -1,0 +1,13 @@
+digraph "tTaskSchedUnRdy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node131 [label="tTaskSchedUnRdy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node131 -> Node132 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node132 [label="tEventWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a0bbda829b0d83072138caad66f98899a"];
+  Node131 -> Node133 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node133 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node131 -> Node134 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node134 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+}

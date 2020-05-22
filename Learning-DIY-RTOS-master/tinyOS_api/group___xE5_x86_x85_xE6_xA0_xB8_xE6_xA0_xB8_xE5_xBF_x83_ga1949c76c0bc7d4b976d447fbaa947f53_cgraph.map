@@ -1,0 +1,23 @@
+<map id="idleTaskEntry" name="idleTaskEntry">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6df36bc0539da24c9391099f55d1d710" title="禁止任务调度 " alt="" coords="334,27,468,52"/>
+<area shape="rect" id="node3" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab4d6c802c474b9071f48312bed3dec74" title="tTaskEnterCritical" alt="" coords="522,52,647,77"/>
+<area shape="rect" id="node4" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga21b4efbc4cb710d7d0e71678d2b13e53" title="tTaskExitCritical" alt="" coords="527,128,642,153"/>
+<area shape="rect" id="node5" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga128c7f316762a1359035436f379a6eba" title="tInitApp" alt="" coords="187,228,253,253"/>
+<area shape="rect" id="node6" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga6013a8ecf7fc98794f130d4bfb5f6402" title="tTimerInitTask" alt="" coords="168,277,272,303"/>
+<area shape="rect" id="node13" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga9864b7e0f6ee65dc2d179f1799a47093" title="tSetSysTickPeriod" alt="" coords="155,327,285,352"/>
+<area shape="rect" id="node14" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga278230ba5b792cfe8310c110ec638e77" title="允许任务调度 " alt="" coords="154,179,286,204"/>
+<area shape="rect" id="node22" href="$group___hooks_xE6_x89_xA9_xE5_xB1_x95.html#ga4c444a8e6a58c580a94955392f235dc3" title="tHooksCpuIdle" alt="" coords="165,376,274,401"/>
+<area shape="rect" id="node7" href="$group___xE4_xBB_xBB_xE5_x8A_xA1_xE7_xAE_xA1_xE7_x90_x86.html#ga639ee038febea3c977d37585fcc8a573" title="tTaskInit" alt="" coords="366,351,436,376"/>
+<area shape="rect" id="node8" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gae1557d8978ed3d8374e2ab3f0920c860" title="tNodeInit" alt="" coords="547,327,622,352"/>
+<area shape="rect" id="node9" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab7c2dfbda696e43a8c35ab97731837a0" title="将任务设置为就绪状态 " alt="" coords="528,376,642,401"/>
+<area shape="rect" id="node12" href="$group___hooks_xE6_x89_xA9_xE5_xB1_x95.html#ga7c4f462bd1d7e22836519312218b8f1e" title="tHooksTaskInit" alt="" coords="531,425,639,451"/>
+<area shape="rect" id="node10" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6" title="tListAddLast" alt="" coords="720,363,815,388"/>
+<area shape="rect" id="node11" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga77e6ff906f4751ea7f055562b94cad54" title="tBitmapSet" alt="" coords="724,412,811,437"/>
+<area shape="rect" id="node15" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gaeb48f2b93febc962f23d9a6a72db9d8e" title="任务调度接口。通过它来选择下一个具体的任务，然后切换至该任务运行。 " alt="" coords="356,229,446,255"/>
+<area shape="rect" id="node16" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gac9f0cf7d9a8b992eb7f43c84aeb1ddca" title="获取当前最高优先级且可运行的任务 " alt="" coords="516,277,653,303"/>
+<area shape="rect" id="node20" href="$group___hooks_xE6_x89_xA9_xE5_xB1_x95.html#gaf5f3298fd391c362d819f3a765834091" title="tHooksTaskSwitch" alt="" coords="520,179,649,204"/>
+<area shape="rect" id="node21" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga0cd2c487eac7429325389fa3ee59867d" title="tTaskSwitch" alt="" coords="539,228,630,253"/>
+<area shape="rect" id="node17" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#gae86fbb239ac4694acf71b11c7cc6b479" title="tBitmapGetFirstSet" alt="" coords="701,240,835,265"/>
+<area shape="rect" id="node19" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga9203dd58a7f2dafed784c397861dd203" title="tListFirst" alt="" coords="732,289,803,315"/>
+<area shape="rect" id="node18" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga24bbbd4e9273fa00e125cbf600c851c1" title="tBitmapPosCount" alt="" coords="883,240,1008,265"/>
+</map>

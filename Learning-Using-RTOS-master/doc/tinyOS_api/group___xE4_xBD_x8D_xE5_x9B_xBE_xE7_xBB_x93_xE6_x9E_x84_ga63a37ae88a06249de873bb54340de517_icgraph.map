@@ -1,0 +1,18 @@
+<map id="tBitmapClear" name="tBitmapClear">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6f3aa47609478099b79d1520a9baf9b3" title="将任务从就绪列表中移除 " alt="" coords="156,253,287,279"/>
+<area shape="rect" id="node15" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gae85f17694aea45697d37b787702822ad" title="将任务从就绪列表中移除 " alt="" coords="152,401,292,427"/>
+<area shape="rect" id="node3" href="$group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA7_xE5_x88_xB6_xE5_x9D_x97.html#ga0bbda829b0d83072138caad66f98899a" title="tEventWait" alt="" coords="360,103,445,128"/>
+<area shape="rect" id="node6" href="$group___xE4_xBA_x92_xE6_x96_xA5_xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga2608713c70ae2de620f39566c023abe9" title="tMutexWait" alt="" coords="526,153,613,179"/>
+<area shape="rect" id="node11" href="$group___xE4_xBA_x92_xE6_x96_xA5_xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#gad192db653abe0e792860dccd9e4050ba" title="tMutexNotify" alt="" coords="354,204,450,229"/>
+<area shape="rect" id="node12" href="$group___xE4_xBA_x92_xE6_x96_xA5_xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga8e1b65bea50a87032971eb167d411723" title="tMutexDestroy" alt="" coords="349,253,456,279"/>
+<area shape="rect" id="node13" href="$group___xE4_xBB_xBB_xE5_x8A_xA1_xE7_xAE_xA1_xE7_x90_x86.html#ga9b1df557da8292af30d6ff42b48e0755" title="tTaskSuspend" alt="" coords="350,303,455,328"/>
+<area shape="rect" id="node14" href="$group___xE4_xBB_xBB_xE5_x8A_xA1_xE7_xAE_xA1_xE7_x90_x86.html#ga7851f5bca32151d048fdf5a76e957673" title="tTaskDelay" alt="" coords="359,352,445,377"/>
+<area shape="rect" id="node4" href="$group___xE9_x82_xAE_xE7_xAE_xB1.html#ga23993f613e24cf58555aae3b7606722d" title="tMboxWait" alt="" coords="528,5,611,31"/>
+<area shape="rect" id="node5" href="$group___xE5_xAD_x98_xE5_x82_xA8_xE5_x9D_x97.html#ga1ffdf77b2ef5b1e59f0738c018747af5" title="tMemBlockWait" alt="" coords="513,55,626,80"/>
+<area shape="rect" id="node7" href="$group___xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga9946734436c2a1ab849654a72e0de0ce" title="tSemWait" alt="" coords="530,104,609,129"/>
+<area shape="rect" id="node8" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga7a8932a1c16f4eb96e7a0620272d846e" title="tTimerStart" alt="" coords="674,80,761,105"/>
+<area shape="rect" id="node9" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga7090133d856e1d8bfa5d619e7be397cb" title="tTimerStop" alt="" coords="675,129,761,155"/>
+<area shape="rect" id="node10" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga34c554ef3abd95f382165dae86122aef" title="tTimerDestroy" alt="" coords="809,129,913,155"/>
+<area shape="rect" id="node16" href="$group___xE4_xBB_xBB_xE5_x8A_xA1_xE7_xAE_xA1_xE7_x90_x86.html#gad4f55f0276a954401641c0972f0020e3" title="tTaskForceDelete" alt="" coords="340,401,465,427"/>
+<area shape="rect" id="node17" href="$group___xE4_xBB_xBB_xE5_x8A_xA1_xE7_xAE_xA1_xE7_x90_x86.html#ga7e75a9fc2e7d9ca0bf62d519db50de00" title="tTaskDeleteSelf" alt="" coords="345,451,459,476"/>
+</map>

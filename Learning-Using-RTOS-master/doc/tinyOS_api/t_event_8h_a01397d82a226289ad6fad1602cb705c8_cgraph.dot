@@ -1,0 +1,23 @@
+digraph "tEventWakeUp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node35 [label="tEventWakeUp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node35 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="tTaskEnterCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a16e475be7fbd0f261644dcfd819329aa"];
+  Node35 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="tListRemoveFirst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gaf2dc8b31ed5ec5aac0b7bebc21448a78"];
+  Node35 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="tTimeTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#a5086649a1a0f0337850b059e6d28807e",tooltip="将延时的任务从延时队列中唤醒 "];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="tListRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga58e2fef327c5254062441ec2f8a101a6"];
+  Node35 -> Node40 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="tTaskSchedRdy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ab7c2dfbda696e43a8c35ab97731837a0",tooltip="将任务设置为就绪状态 "];
+  Node40 -> Node41 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="tListAddLast",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6"];
+  Node40 -> Node42 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="tBitmapSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga77e6ff906f4751ea7f055562b94cad54"];
+  Node35 -> Node43 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node43 [label="tTaskExitCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a21b4efbc4cb710d7d0e71678d2b13e53"];
+}

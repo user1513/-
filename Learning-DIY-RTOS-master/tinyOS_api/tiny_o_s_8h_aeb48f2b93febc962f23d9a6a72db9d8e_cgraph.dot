@@ -1,0 +1,23 @@
+digraph "tTaskSched"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node90 [label="tTaskSched",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node90 -> Node91 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node91 [label="tTaskEnterCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a16e475be7fbd0f261644dcfd819329aa"];
+  Node90 -> Node92 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node92 [label="tTaskExitCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a21b4efbc4cb710d7d0e71678d2b13e53"];
+  Node90 -> Node93 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node93 [label="tTaskHighestReady",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ada227be7ca5dcd9fb8cd9f2f496d5c1c",tooltip="获取当前最高优先级且可运行的任务 "];
+  Node93 -> Node94 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node94 [label="tBitmapGetFirstSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#gae86fbb239ac4694acf71b11c7cc6b479"];
+  Node94 -> Node95 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node95 [label="tBitmapPosCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga24bbbd4e9273fa00e125cbf600c851c1"];
+  Node93 -> Node96 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node96 [label="tListFirst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga9203dd58a7f2dafed784c397861dd203"];
+  Node90 -> Node97 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node97 [label="tHooksTaskSwitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_hooks_8h.html#af5f3298fd391c362d819f3a765834091"];
+  Node90 -> Node98 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node98 [label="tTaskSwitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a0cd2c487eac7429325389fa3ee59867d"];
+}

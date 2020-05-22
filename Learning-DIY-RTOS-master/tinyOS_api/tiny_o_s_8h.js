@@ -1,0 +1,36 @@
+var tiny_o_s_8h =
+[
+    [ "TICKS_PER_SEC", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga4a0c770328891d8916c1142a26481e4a", null ],
+    [ "tError", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga02ee1b01b0bf3844bd4987de0dfe0767", null ],
+    [ "tTaskCritical_t", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gacaff12be90593624d3294e44afa349e4", null ],
+    [ "_tError", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga79eea102ac8c9dc0bcce5f8c63ccc55a", [
+      [ "tErrorNoError", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aab8add26d1e8bad7b6abb3c0c453fcabc", null ],
+      [ "tErrorTimeout", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aa3d559103c30e03f6b23baa514ce4ef01", null ],
+      [ "tErrorResourceUnavaliable", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aa255993b8e7a6ec085f545b2cb4b0e161", null ],
+      [ "tErrorDel", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aa6c274bf418a43d0cf80e68161aad9d8e", null ],
+      [ "tErrorResourceFull", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aa3d0a1362746e1fa83fbd3b55da342a9e", null ],
+      [ "tErrorOwner", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gga79eea102ac8c9dc0bcce5f8c63ccc55aadbf11a8eef09c91538ceeea00fbef507", null ]
+    ] ],
+    [ "tCpuUsageGet", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gad5542021022dfa330f2c2fe68b057677", null ],
+    [ "tInitApp", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga128c7f316762a1359035436f379a6eba", null ],
+    [ "tSetSysTickPeriod", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga9864b7e0f6ee65dc2d179f1799a47093", null ],
+    [ "tTaskDelay", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga7851f5bca32151d048fdf5a76e957673", null ],
+    [ "tTaskEnterCritical", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab4d6c802c474b9071f48312bed3dec74", null ],
+    [ "tTaskExitCritical", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga21b4efbc4cb710d7d0e71678d2b13e53", null ],
+    [ "tTaskHighestReady", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gac9f0cf7d9a8b992eb7f43c84aeb1ddca", null ],
+    [ "tTaskRunFirst", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga0fb8703674b7e263ae5b825af16cbce5", null ],
+    [ "tTaskSched", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gaeb48f2b93febc962f23d9a6a72db9d8e", null ],
+    [ "tTaskSchedDisable", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6df36bc0539da24c9391099f55d1d710", null ],
+    [ "tTaskSchedEnable", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga278230ba5b792cfe8310c110ec638e77", null ],
+    [ "tTaskSchedInit", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga9be6ec7675bc849423bb28132c6f3474", null ],
+    [ "tTaskSchedRdy", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab7c2dfbda696e43a8c35ab97731837a0", null ],
+    [ "tTaskSchedRemove", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gae85f17694aea45697d37b787702822ad", null ],
+    [ "tTaskSchedUnRdy", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6f3aa47609478099b79d1520a9baf9b3", null ],
+    [ "tTaskSwitch", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga0cd2c487eac7429325389fa3ee59867d", null ],
+    [ "tTaskSystemTickHandler", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga9141328add126e3c2659b2df4b969d3c", null ],
+    [ "tTimeTaskRemove", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga691c421f369dba6c9e2015076262d377", null ],
+    [ "tTimeTaskWait", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga1f612696830f8adeb411745ff719377c", null ],
+    [ "tTimeTaskWakeUp", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga5086649a1a0f0337850b059e6d28807e", null ],
+    [ "currentTask", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6f232fb9d8361d1071e4f621468e0ee1", null ],
+    [ "nextTask", "group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga159b80359c1c58e1541a4f037178b6c4", null ]
+];

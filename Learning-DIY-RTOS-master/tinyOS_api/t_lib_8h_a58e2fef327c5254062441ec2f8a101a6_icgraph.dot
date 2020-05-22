@@ -1,0 +1,38 @@
+digraph "tListRemove"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node56 [label="tListRemove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node56 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="tTaskSchedUnRdy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a6f3aa47609478099b79d1520a9baf9b3",tooltip="将任务从就绪列表中移除 "];
+  Node57 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="tEventWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a0bbda829b0d83072138caad66f98899a"];
+  Node57 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node57 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+  Node56 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="tTaskSchedRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#ae85f17694aea45697d37b787702822ad",tooltip="将任务从就绪列表中移除 "];
+  Node61 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="tTaskForceDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ad4f55f0276a954401641c0972f0020e3"];
+  Node61 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="tTaskDeleteSelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a7e75a9fc2e7d9ca0bf62d519db50de00"];
+  Node56 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="tTimeTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a5086649a1a0f0337850b059e6d28807e",tooltip="将延时的任务从延时队列中唤醒 "];
+  Node64 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node64 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="tEventWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a01397d82a226289ad6fad1602cb705c8"];
+  Node64 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="tEventWakeUpTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#af035c08c00e607bf3019020ee09bf3c8"];
+  Node64 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="tEventRemoveAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#ace850c06cc2fc2f07296e1eb4552030a"];
+  Node56 -> Node69 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 [label="tTimeTaskRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a691c421f369dba6c9e2015076262d377",tooltip="将延时的任务从延时队列中移除 "];
+  Node69 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 -> Node70 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="tEventRemoveTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a8d21f6237cc8ac3ec38687e1f7fa4999"];
+  Node70 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

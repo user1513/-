@@ -1,0 +1,22 @@
+digraph "tEventWakeUpTask"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node45 [label="tEventWakeUpTask",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="tTaskEnterCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a16e475be7fbd0f261644dcfd819329aa"];
+  Node45 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="tListRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga58e2fef327c5254062441ec2f8a101a6"];
+  Node45 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="tTimeTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#a5086649a1a0f0337850b059e6d28807e",tooltip="将延时的任务从延时队列中唤醒 "];
+  Node48 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="tTaskSchedRdy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ab7c2dfbda696e43a8c35ab97731837a0",tooltip="将任务设置为就绪状态 "];
+  Node49 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="tListAddLast",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6"];
+  Node49 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="tBitmapSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga77e6ff906f4751ea7f055562b94cad54"];
+  Node45 -> Node52 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="tTaskExitCritical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a21b4efbc4cb710d7d0e71678d2b13e53"];
+}

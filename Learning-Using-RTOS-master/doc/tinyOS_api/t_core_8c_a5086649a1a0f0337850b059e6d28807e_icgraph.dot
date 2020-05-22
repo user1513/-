@@ -1,0 +1,15 @@
+digraph "tTimeTaskWakeUp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node169 [label="tTimeTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node169 -> Node170 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node170 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node169 -> Node171 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node171 [label="tEventWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#a01397d82a226289ad6fad1602cb705c8"];
+  Node169 -> Node172 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node172 [label="tEventWakeUpTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#af035c08c00e607bf3019020ee09bf3c8"];
+  Node169 -> Node173 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node173 [label="tEventRemoveAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_event_8h.html#ace850c06cc2fc2f07296e1eb4552030a"];
+}

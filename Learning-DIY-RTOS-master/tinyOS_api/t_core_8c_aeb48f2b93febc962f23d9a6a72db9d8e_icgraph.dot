@@ -1,0 +1,26 @@
+digraph "tTaskSched"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node74 [label="tTaskSched",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node74 -> Node75 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node75 [label="tTaskSchedEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a278230ba5b792cfe8310c110ec638e77",tooltip="允许任务调度 "];
+  Node75 -> Node76 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node75 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="idleTaskEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#a1949c76c0bc7d4b976d447fbaa947f53",tooltip="空闲任务 "];
+  Node77 -> Node78 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="系统入口，完成所有功能的创建，空闲任务的创建等功能 "];
+  Node74 -> Node76 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 -> Node79 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node74 -> Node80 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="tTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ac08bc12c30a810c1ec5c48f330fd509a"];
+  Node74 -> Node81 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="tTaskForceDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ad4f55f0276a954401641c0972f0020e3"];
+  Node74 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="tTaskDeleteSelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a7e75a9fc2e7d9ca0bf62d519db50de00"];
+  Node74 -> Node83 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+}

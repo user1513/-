@@ -1,0 +1,19 @@
+<map id="tSemDestroy" name="tSemDestroy">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab4d6c802c474b9071f48312bed3dec74" title="tTaskEnterCritical" alt="" coords="329,203,454,228"/>
+<area shape="rect" id="node3" href="$group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA7_xE5_x88_xB6_xE5_x9D_x97.html#gace850c06cc2fc2f07296e1eb4552030a" title="tEventRemoveAll" alt="" coords="152,151,275,176"/>
+<area shape="rect" id="node11" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga21b4efbc4cb710d7d0e71678d2b13e53" title="tTaskExitCritical" alt="" coords="334,252,449,277"/>
+<area shape="rect" id="node12" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gaeb48f2b93febc962f23d9a6a72db9d8e" title="任务调度接口。通过它来选择下一个具体的任务，然后切换至该任务运行。 " alt="" coords="168,303,259,328"/>
+<area shape="rect" id="node4" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gad01c0c24187a334e78e7ba6d677306cb" title="tListCount" alt="" coords="351,104,432,129"/>
+<area shape="rect" id="node5" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gaf2dc8b31ed5ec5aac0b7bebc21448a78" title="tListRemoveFirst" alt="" coords="331,153,452,179"/>
+<area shape="rect" id="node6" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga5086649a1a0f0337850b059e6d28807e" title="将延时的任务从延时队列中唤醒 " alt="" coords="325,5,458,31"/>
+<area shape="rect" id="node8" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab7c2dfbda696e43a8c35ab97731837a0" title="将任务设置为就绪状态 " alt="" coords="334,55,448,80"/>
+<area shape="rect" id="node7" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga58e2fef327c5254062441ec2f8a101a6" title="tListRemove" alt="" coords="527,5,622,31"/>
+<area shape="rect" id="node9" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6" title="tListAddLast" alt="" coords="527,55,622,80"/>
+<area shape="rect" id="node10" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga77e6ff906f4751ea7f055562b94cad54" title="tBitmapSet" alt="" coords="531,104,618,129"/>
+<area shape="rect" id="node13" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gac9f0cf7d9a8b992eb7f43c84aeb1ddca" title="获取当前最高优先级且可运行的任务 " alt="" coords="323,301,460,327"/>
+<area shape="rect" id="node17" href="$group___hooks_xE6_x89_xA9_xE5_xB1_x95.html#gaf5f3298fd391c362d819f3a765834091" title="tHooksTaskSwitch" alt="" coords="327,351,456,376"/>
+<area shape="rect" id="node18" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga0cd2c487eac7429325389fa3ee59867d" title="tTaskSwitch" alt="" coords="346,400,437,425"/>
+<area shape="rect" id="node14" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#gae86fbb239ac4694acf71b11c7cc6b479" title="tBitmapGetFirstSet" alt="" coords="508,327,641,352"/>
+<area shape="rect" id="node16" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga9203dd58a7f2dafed784c397861dd203" title="tListFirst" alt="" coords="539,277,610,303"/>
+<area shape="rect" id="node15" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga24bbbd4e9273fa00e125cbf600c851c1" title="tBitmapPosCount" alt="" coords="689,327,815,352"/>
+</map>

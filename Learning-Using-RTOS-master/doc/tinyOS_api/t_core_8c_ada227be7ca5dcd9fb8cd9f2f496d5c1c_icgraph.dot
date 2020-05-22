@@ -1,0 +1,29 @@
+digraph "tTaskHighestReady"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node54 [label="tTaskHighestReady",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node54 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="tTaskSched",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#aeb48f2b93febc962f23d9a6a72db9d8e",tooltip="任务调度接口。通过它来选择下一个具体的任务，然后切换至该任务运行。 "];
+  Node55 -> Node56 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="tTaskSchedEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a278230ba5b792cfe8310c110ec638e77",tooltip="允许任务调度 "];
+  Node56 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node56 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="idleTaskEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#a1949c76c0bc7d4b976d447fbaa947f53",tooltip="空闲任务 "];
+  Node58 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="系统入口，完成所有功能的创建，空闲任务的创建等功能 "];
+  Node55 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node55 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="tTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ac08bc12c30a810c1ec5c48f330fd509a"];
+  Node55 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="tTaskForceDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ad4f55f0276a954401641c0972f0020e3"];
+  Node55 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="tTaskDeleteSelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a7e75a9fc2e7d9ca0bf62d519db50de00"];
+  Node55 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+  Node54 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,10 @@
+<map id="tEventWakeUp" name="tEventWakeUp">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab4d6c802c474b9071f48312bed3dec74" title="tTaskEnterCritical" alt="" coords="167,5,292,31"/>
+<area shape="rect" id="node3" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gaf2dc8b31ed5ec5aac0b7bebc21448a78" title="tListRemoveFirst" alt="" coords="169,55,290,80"/>
+<area shape="rect" id="node4" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga5086649a1a0f0337850b059e6d28807e" title="将延时的任务从延时队列中唤醒 " alt="" coords="163,104,295,129"/>
+<area shape="rect" id="node6" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab7c2dfbda696e43a8c35ab97731837a0" title="将任务设置为就绪状态 " alt="" coords="172,153,286,179"/>
+<area shape="rect" id="node9" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga21b4efbc4cb710d7d0e71678d2b13e53" title="tTaskExitCritical" alt="" coords="172,203,287,228"/>
+<area shape="rect" id="node5" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga58e2fef327c5254062441ec2f8a101a6" title="tListRemove" alt="" coords="343,104,439,129"/>
+<area shape="rect" id="node7" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6" title="tListAddLast" alt="" coords="344,153,438,179"/>
+<area shape="rect" id="node8" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga77e6ff906f4751ea7f055562b94cad54" title="tBitmapSet" alt="" coords="348,203,434,228"/>
+</map>

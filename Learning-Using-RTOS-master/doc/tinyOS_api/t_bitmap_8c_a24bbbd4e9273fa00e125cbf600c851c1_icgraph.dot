@@ -1,0 +1,33 @@
+digraph "tBitmapPosCount"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node28 [label="tBitmapPosCount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="tBitmapGetFirstSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_lib_8h.html#ae86fbb239ac4694acf71b11c7cc6b479"];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="tTaskHighestReady",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#ada227be7ca5dcd9fb8cd9f2f496d5c1c",tooltip="获取当前最高优先级且可运行的任务 "];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="tTaskSched",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#aeb48f2b93febc962f23d9a6a72db9d8e",tooltip="任务调度接口。通过它来选择下一个具体的任务，然后切换至该任务运行。 "];
+  Node31 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="tTaskSchedEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a278230ba5b792cfe8310c110ec638e77",tooltip="允许任务调度 "];
+  Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="tTaskSystemTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny_o_s_8h.html#a9141328add126e3c2659b2df4b969d3c",tooltip="系统时钟节拍处理 "];
+  Node32 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="idleTaskEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#a1949c76c0bc7d4b976d447fbaa947f53",tooltip="空闲任务 "];
+  Node34 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_core_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="系统入口，完成所有功能的创建，空闲任务的创建等功能 "];
+  Node31 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="tTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a9b1df557da8292af30d6ff42b48e0755"];
+  Node31 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="tTaskWakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ac08bc12c30a810c1ec5c48f330fd509a"];
+  Node31 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="tTaskForceDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#ad4f55f0276a954401641c0972f0020e3"];
+  Node31 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="tTaskDeleteSelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_task_8h.html#a7e75a9fc2e7d9ca0bf62d519db50de00"];
+  Node31 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="tTaskDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$t_time_8c.html#a7851f5bca32151d048fdf5a76e957673",tooltip="tinyOS的延时实现 "];
+  Node30 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

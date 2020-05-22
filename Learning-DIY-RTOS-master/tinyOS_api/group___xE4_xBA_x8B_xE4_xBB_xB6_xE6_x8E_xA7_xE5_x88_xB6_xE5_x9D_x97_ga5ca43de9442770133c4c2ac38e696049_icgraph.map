@@ -1,0 +1,9 @@
+<map id="tEventInit" name="tEventInit">
+<area shape="rect" id="node2" href="$group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_xA0_x87_xE5_xBF_x97_xE7_xBB_x84.html#ga00911071fa217a74d382bb498e95ca84" title="tFlagGroupInit" alt="" coords="130,5,236,31"/>
+<area shape="rect" id="node3" href="$group___xE9_x82_xAE_xE7_xAE_xB1.html#gae6bb5e2c3b40c25946cd3783387ef53e" title="tMboxInit" alt="" coords="145,55,221,80"/>
+<area shape="rect" id="node4" href="$group___xE5_xAD_x98_xE5_x82_xA8_xE5_x9D_x97.html#ga5af4d0c00dfeb923f7157c8f80692553" title="tMemBlockInit" alt="" coords="131,104,236,129"/>
+<area shape="rect" id="node5" href="$group___xE4_xBA_x92_xE6_x96_xA5_xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#gae12a3d5db0c3834e8a3837358f4f3302" title="tMutexInit" alt="" coords="144,153,223,179"/>
+<area shape="rect" id="node6" href="$group___xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga1a48fab4ce73fc72b1a2ed6fa8771f8e" title="tSemInit" alt="" coords="148,203,218,228"/>
+<area shape="rect" id="node7" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga62301aa36a38ff645bdf05136b3fd6cf" title="tTimerModuleInit" alt="" coords="284,203,404,228"/>
+<area shape="rect" id="node8" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gae66f6b31b5ad750f1fe042a706a4e3d4" title="系统入口，完成所有功能的创建，空闲任务的创建等功能 " alt="" coords="452,203,502,228"/>
+</map>

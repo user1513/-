@@ -1,0 +1,10 @@
+<map id="tEventWait" name="tEventWait">
+<area shape="rect" id="node2" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#gab4d6c802c474b9071f48312bed3dec74" title="tTaskEnterCritical" alt="" coords="142,5,267,31"/>
+<area shape="rect" id="node3" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga6f3aa47609478099b79d1520a9baf9b3" title="将任务从就绪列表中移除 " alt="" coords="139,55,270,80"/>
+<area shape="rect" id="node7" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga6278d548e9b37d514acbebc25617f1b6" title="tListAddLast" alt="" coords="320,155,414,180"/>
+<area shape="rect" id="node8" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga1f612696830f8adeb411745ff719377c" title="将任务加入延时队列中 " alt="" coords="150,156,258,181"/>
+<area shape="rect" id="node9" href="$group___xE5_x86_x85_xE6_xA0_xB8_xE6_xA0_xB8_xE5_xBF_x83.html#ga21b4efbc4cb710d7d0e71678d2b13e53" title="tTaskExitCritical" alt="" coords="146,205,262,231"/>
+<area shape="rect" id="node4" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#ga58e2fef327c5254062441ec2f8a101a6" title="tListRemove" alt="" coords="319,5,415,31"/>
+<area shape="rect" id="node5" href="$group___xE5_x8F_x8C_xE5_x90_x91_xE9_x93_xBE_xE8_xA1_xA8.html#gad01c0c24187a334e78e7ba6d677306cb" title="tListCount" alt="" coords="326,55,408,80"/>
+<area shape="rect" id="node6" href="$group___xE4_xBD_x8D_xE5_x9B_xBE_xE7_xBB_x93_xE6_x9E_x84.html#ga63a37ae88a06249de873bb54340de517" title="tBitmapClear" alt="" coords="318,104,416,129"/>
+</map>

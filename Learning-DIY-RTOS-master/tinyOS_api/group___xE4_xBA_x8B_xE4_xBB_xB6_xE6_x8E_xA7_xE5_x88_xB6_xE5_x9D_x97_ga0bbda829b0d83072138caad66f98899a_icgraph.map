@@ -1,0 +1,9 @@
+<map id="tEventWait" name="tEventWait">
+<area shape="rect" id="node2" href="$group___xE9_x82_xAE_xE7_xAE_xB1.html#ga23993f613e24cf58555aae3b7606722d" title="tMboxWait" alt="" coords="153,5,237,31"/>
+<area shape="rect" id="node3" href="$group___xE5_xAD_x98_xE5_x82_xA8_xE5_x9D_x97.html#ga1ffdf77b2ef5b1e59f0738c018747af5" title="tMemBlockWait" alt="" coords="139,55,252,80"/>
+<area shape="rect" id="node4" href="$group___xE4_xBA_x92_xE6_x96_xA5_xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga2608713c70ae2de620f39566c023abe9" title="tMutexWait" alt="" coords="152,104,239,129"/>
+<area shape="rect" id="node5" href="$group___xE4_xBF_xA1_xE5_x8F_xB7_xE9_x87_x8F.html#ga9946734436c2a1ab849654a72e0de0ce" title="tSemWait" alt="" coords="156,153,235,179"/>
+<area shape="rect" id="node6" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga7a8932a1c16f4eb96e7a0620272d846e" title="tTimerStart" alt="" coords="300,128,387,153"/>
+<area shape="rect" id="node7" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga7090133d856e1d8bfa5d619e7be397cb" title="tTimerStop" alt="" coords="300,177,387,203"/>
+<area shape="rect" id="node8" href="$group___xE8_xBD_xAF_xE5_xAE_x9A_xE6_x97_xB6_xE5_x99_xA8.html#ga34c554ef3abd95f382165dae86122aef" title="tTimerDestroy" alt="" coords="435,177,539,203"/>
+</map>
